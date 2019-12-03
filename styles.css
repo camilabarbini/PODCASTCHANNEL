@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+                                        /* formatos repetidos */
+
+.title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+p{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-bottom: 36px;
+    max-width: 288px;
+}
+button {
+    background: #00F3BB;
+    border: none;
+    width: 288px;
+    height: 48px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+button p {
+    text-align: center;
+    margin: 13px 96px;
+}   
+                                        /* secciones */
+.container {
+    margin-left: 16px;
+    max-width: 320px;
+    
+}
+.navbar {
+    margin-left: -16px;
+    width: 320px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 19px;
+    padding-left: 16px;    
+}
+.header {
+    width: 222px;
+    margin-bottom: 16px;
+} 
+#episodios {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: 320px;
+    height:1203.5px;
+    padding: 64px 11px 143.5px 11px;
+    margin-left: -16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+                                        /* logo */
+.container div img {
+    background-color: #FFFFFFFF;
+    width: 24px;
+    height: 24px;
+    
+}
+                                        /* menu hamburguesa*/
+label, a {
+    cursor:pointer;
+}
+#menu div {
+    width: 18px;
+    height: 2px;
+    background-color: #000000; 
+    margin-bottom: 3px;
+  
+}
+#menu :last-child {
+    margin-bottom: 0px;
+}
+                                        /*lista desplegable*/
+.container div ul {
+    position: absolute;
+    width: 320px;
+    height: 224px;
+    background-color: #0000EC;
+    left: 0px;
+    top: 44px;
+    display: none;
+    
+}
+.container div ul li {
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+.container div ul :first-child {
+    margin-top: 19px;
+}
+.itemsMenu a{
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+                                        /*funcion del menu*/
+
+input {
+    display: none;
+}
+#checkbox:checked + ul {
+    display: block;
+}
+                                        /*episodios*/
+#episodios .title {
+    margin-bottom: 24px;
+}
+.podcast iframe {
+    margin-bottom: 11px;
+}
+.podcast:last-child {
+    margin-bottom: 0px;
+}
+#episodios .title{
+    color: #FFFFFF;
+    height: 42px;
+    width: 157px;
+    position: relative;
+}
+.svgTop{
+    position: absolute;
+    top: 0px;
+    width: 342px;
+    height: 10vw;
+    margin-left: -16px;
+    transform: rotate(180deg);
+}
+
+.svgBottom {
+    position: absolute;
+    bottom: 0px;
+    width: 325px;
+    height: 6vw;
+    margin-left: -16px;
+}
