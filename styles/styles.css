@@ -34,10 +34,9 @@ button {
     line-height: 22px;
     text-transform: uppercase;
 }
-
                                         /* secciones */
 .container {
-    margin-left: 16px;
+    padding-left: 16px;
     width: 320px;
 }
 .navbar {
@@ -69,29 +68,36 @@ button {
 .podcast {
     height: 944px;
 }
+
+#entrevistas {
+    width: 288px;
+    height: 1556px;
+    margin-bottom: 8px;
+}
 .galery {
     margin-left: -16px;
+    display: flex;
+    height: 1458px;
+    flex-direction: column;
 }
 #nosotros {
     width: 288px;
-    height: 84px;
     margin-bottom: 8px;
+    height: 346px;    
 }
-#entrevistas {
-    width: 288px;
-    height: 84px;
-    margin-bottom: 8px;
+#topicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#nosotros p{
-    margin-bottom: 54px;
-}
-                                        /* logo */
+
+/* logo */
 .container div.navbar img {
     background-color: #FFFFFFFF;
     width: 24px;
     height: 24px; 
 }
-                                        /* menu hamburguesa/close */
+/* menu hamburguesa/close */
 label, a {
     cursor:pointer;
 }
@@ -110,7 +116,7 @@ label, a {
     width: 14px;
     color: #060A24;
 }
-                                        /*lista desplegable*/
+/*lista desplegable*/
 .container div ul {
     position: absolute;
     width: 320px;
@@ -118,12 +124,11 @@ label, a {
     background-color: #0000EC;
     left: 0px;
     top: 44px;
-    display: none;
-    
+    display: none; 
 }
 .container div ul li {
     margin-left: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 24px; 
 }
 .container div ul :first-child {
     margin-top: 19px;
@@ -185,26 +190,56 @@ iframe{
     margin-left: -11px;
 }
                                         /*phone*/
-#phone {
+
+.phone {
+    margin-top: -95.5px;
+    margin-left: -36px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 27px;
+    
+}
+.phone img {
     width: 360px;
     height: 519px;
-    margin-bottom: 27px;
-    z-index: 1;
-    position: absolute;
-    top: 1108px;
-    right: -20px;
 }
+
                                         /*nosotros*/
+#nosotros .title {
+    margin-bottom: 8px;
+}
 #nosotros p{
     margin-bottom: 54px;
 }
                                         /*galeria de imagenes*/
-.galery img{
+.galery div img{
     width: 320px;
     height: 243px;
     vertical-align: bottom;
 }
-
+                                        /*topicos*/
+.topicIcons {
+    width: 104px;
+    height: 104px;
+    margin: 0 108px;
+}
+#topicos .title ~ div {
+    width: 320px;
+    height: 162px;
+    background-color: red;
+    margin-left: -16px;
+    padding: ;
+}
+.pieIcono {
+    font-family: 'IBM Plex Sans', sans-serif, monospace;
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    width: 288px;
+    height: 64px;
+    margin: 0 auto;
+}
                                         /* RESPONSIVE DESKTOP*/
 /*button:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
