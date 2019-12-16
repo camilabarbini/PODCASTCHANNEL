@@ -7,14 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>PODCAST CHANNEL</title>
   <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500|IBM+Plex+Sans&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b06f65270a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="container">
-<!--NAVBAR-->
+    <!--NAVBAR-->
     <div class="navbar">
-      <img src="/images/logo.svg" alt="Logo BR"> 
+      <img src="/images/logo.svg" alt="Logo BR">
       <input type="checkbox" id="checkbox">
       <ul class="itemsMenu" style="list-style-type:none;">
         <li><a href="#episodios" target="_self">episodios</a></li>
@@ -31,18 +33,15 @@
         <img src="images/close.png" alt="icono cerrar" id="close">
       </label>
     </div>
-<!--TITULO-->
-    <section class="header">
+    <!--HEADER-->
+    <div class="header">
       <div class="title">
         Hello <del>world</del> pale blue dot<span>.</span>
       </div>
-<!--PONER PARRAFO Y BOTON CON EL TITULO PRINCIPAL-->
-    </section>
+    </div>
     <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
-    <button>
-    conocé más
-    </button>
-<!--EPISODIOS-->
+    <button><a href="#conoceMas" target="_self">conocé más</a></button>
+    <!--EPISODIOS-->
     <div id="episodios">
       <header>
         <div class="title">Episodios</div>
@@ -51,61 +50,117 @@
         </svg>
       </header>
       <div class="podcast">
-          <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>       
-          <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>   
-        </div>    
-        <svg class="svgBottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">  
+        <div class="iframeWrapper">
+          <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" scrolling="no"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+      <div class="podcast">
+        <div class="iframeWrapper">
+          <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" scrolling="no"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+      <div class="podcast">
+        <div class="iframeWrapper">
+          <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" scrolling="no"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+      <div class="podcast">
+        <div class="iframeWrapper">
+          <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" scrolling="no"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+      <svg class="svgBottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon fill="white" points="0,100 100,0 100,100" />
-        </svg>
+      </svg>
     </div>
-<!--PHONE-->
+    <!--PHONE-->
     <div class="phone"><img src="images/phone.png" alt="telefono"></div>
-<!--NOSOTROS-->
+    <!--NOSOTROS-->
     <div id="nosotros">
-        <div class="title">De dónde venimos</div>
-        <div>
-          <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
-          Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-        </div>
+      <div class="title">De dónde venimos</div>
+      <div>
+        <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
+          Universe, are challenged by this point of pale light.
+          <br>
+          <br>
+          Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness,
+          there is no hint that help will come from elsewhere to save us from ourselves.</p>
+      </div>
     </div>
-<!--ENTREVISTAS-->
+    <!--ENTREVISTAS-->
     <div id="entrevistas">
-        <div class="title">Invitadas/os estelares</div>
-        <div class="galery">
-          <div><img src="images/grace-hopper.png" alt="Grace Hopper"></div>
-          <div><img src="images/Katie-Bouman.png" alt="Kati Bouman"></div>
-          <div><img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton"></div>
-          <div><img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="computadora en los años cincuenta"></div>
-          <div><img src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="operadores de computadora"></div>
-          <div><img src="images/susan-kare.png" alt="Susan Kare"></div>
+      <div class="title">Invitadas/os estelares</div>
+      <div class="galery">
+        <div><img src="images/grace-hopper.png" alt="Grace Hopper"></div>
+        <div><img src="images/Katie-Bouman.png" alt="Kati Bouman"></div>
+        <div><img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton"></div>
+        <div><img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="computadora en los años cincuenta">
         </div>
+        <div><img
+            src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+            alt="operadores de computadora"></div>
+        <div><img src="images/susan-kare.png" alt="Susan Kare"></div>
+      </div>
     </div>
-<!--TOPICOS-->
+    <!--TOPICOS-->
     <div id="topicos">
       <div class="title">Algunos de nuestros temas</div>
-      <div>
-        <img class="topicIcons" src="/images/icon1.svg" alt="trabajo remoto">
-        <div class="pieIcono">trabajo remoto</div>
+      <div class="topicContainer">
+        <div class="topicIcons"><img src="/images/icon1.svg" alt="trabajo remoto"></div>
+        <div class="pieIcono">Trabajo remoto</div>
       </div>
-      <div>
-        <img class="topicIcons" src="/images/icon2.svg" alt="cerebro">
-        <div class="pieIcono">repensando la programación</div>
+      <div class="topicContainer">
+        <div class="topicIcons"><img src="/images/icon2.svg" alt="cerebro"></div>
+        <div class="pieIcono">Repensando la programación</div>
       </div>
-      <div>
-        <img class="topicIcons" src="/images/icon3.svg" alt="laptop">
-        <div class="pieIcono">bases del código</div>
+      <div class="topicContainer">
+        <div class="topicIcons"><img src="/images/icon3.svg" alt="laptop"></div>
+        <div class="pieIcono">Bases del código</div>
       </div>
-      <div>
-        <img class="topicIcons" src="/images/icon4.svg" alt="seguridad informática">
-        <div class="pieIcono">seguridad informática</div>
+      <div class="topicContainer">
+        <div class="topicIcons"><img src="/images/icon4.svg" alt="seguridad informática"></div>
+        <div class="pieIcono">Seguridad informática</div>
       </div>
-      
     </div>
-  </div>
-    <!--NOVEDADES-->
+    <!--ULTIMAS NOVEDADES-->
+    <div id="novedades">
+      <div>
+        <svg class="lastSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon fill="white" points="0,100 100,0 100,100" />
+        </svg>
+      </div>
+      <div class="title">¿Querés las últimas novedades?</div>
+      <button>
+        <a href="#episodios">escuchá los episodios</a>
+      </button>
+    </div>
     <!--FOOTER CON REDES-->
+    <div id="conoceMas">
+      <div>
+        <p>© 2019— Hello blue pale dot</p>
+      </div>
+      <div class="redes">
+        <div>
+          <a href="http://www.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
+        </div>
+        <div>
+          <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div>
+          <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div>
+          <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div>
+          <a href="https://web.telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
